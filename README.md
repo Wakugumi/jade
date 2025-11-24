@@ -13,7 +13,7 @@ And to credit for this work and paper (soon):
 - Ruby Belinda G. | Editor
 
 # Experiment Docs
-Read more at [docs](./docs/)
+Read more at [docs](./docs/experiment.md)
 
 # Classifier Model
 We continue the work of the original author of the dataset, [Yang and Thung](https://github.com/garythung/trashnet).
