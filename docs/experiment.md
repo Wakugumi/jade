@@ -2,13 +2,13 @@
 Objective: Create a realtime inference model to classify garbage based on its type.
 
 Milestones:
-- Model a high performing heavy neural network classifier and save its parameters (Model A: ResNet50)
-- Model an lightweight mobile-based model for realtime inferencing (Model B: MobileNet)
-- Experiment and evaluate the lightweight model in realtime inferencing
-- Start new model based on the same architecture (Model C) with having Model A's weight as knowledge distillation to Model C
-- Comparative Analysis between Model B and Model C with:
-  - Model Performance
-  - Benchmarking (e.g. latency, memory footprint)
+- [x] Model a high performing heavy neural network classifier and save its parameters (Model A: ResNet50)
+- [x] Model an lightweight mobile-based model for realtime inferencing (Model B: MobileNet)
+- [x] Experiment and evaluate the lightweight model in realtime inferencing
+- [x] Start new model based on the same architecture (Model C) with having Model A's weight as knowledge distillation to Model C
+- [ ] Comparative Analysis between Model B and Model C with:
+  - [x] Model Performance
+  - [ ] Benchmarking (e.g. latency, memory footprint)
 
 # Tools and Libs
 All modeling is done with Torch library. To rebuiild the model, refer to the imported notebook and load the state in [this dir](../model/weights/).
