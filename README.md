@@ -2,6 +2,19 @@
 Project Jade is my assessment on course Computer Vision. Basically its an web-based real-time classifier for garbage types.
 I haven't think of a good name and decide to align with my other personal project naming convention.
 
+# Acknowledgement
+Thanks to [Yang and Thung](https://github.com/garythung/trashnet) for this amazing dataset and their work as the baseline motivation of this repo.
+
+And to credit for this work and paper (soon):
+- Ananda Risyad | App Developer
+- [Lawrance Cancerlon](https://github.com/Lawrance-Cancerlon) | ML Engineering and Data Curator
+- [Yonathan Henry C.](https://github.com/henrychristianto) | Model Evaluator, Writer, Editor
+- [Bryan Wu](https://github.com/BryanWu1020) | Writer, Editor
+- Ruby Belinda G. | Editor
+
+# Experiment Docs
+Read more at [docs](./docs/)
+
 # Classifier Model
 We continue the work of the original author of the dataset, [Yang and Thung](https://github.com/garythung/trashnet).
 They wrote a paper on classifying trash for recyclability status ([Their paper](https://cs229.stanford.edu/proj2016/report/ThungYang-ClassificationOfTrashForRecyclabilityStatus-report.pdf)) which they've collected their data themselves.
