@@ -1,6 +1,5 @@
 # Project Jade
-Project Jade is my assessment on course Computer Vision. Basically its an web-based real-time classifier for garbage types.
-I haven't think of a good name and decide to align with my other personal project naming convention.
+Final assessment on course Computer Vision MATH6168016. Basically its an web-based real-time classifier for garbage types, using our trained MobileNet model distilled from a pretrianed ResNet50.
 
 # Acknowledgement
 Thanks to [Yang and Thung](https://github.com/garythung/trashnet) for this amazing dataset and their work as the baseline motivation of this repo.
@@ -12,7 +11,7 @@ And to credit for this work and paper (soon):
 - [Bryan Wu](https://github.com/BryanWu1020) | Writer, Editor
 - Ruby Belinda G. | Editor
 
-# Experiment Docs
+# [Experiment Docs](./docs/experiment.md)
 Read more at [docs](./docs/experiment.md)
 
 # Classifier Model
@@ -24,7 +23,15 @@ With Torch, We trained a MobileNet model with knowledge distillation from a trai
 # Web App
 We port the model's weight params and by using ONNX runtime allow us to port this into JavaScript.
 The app is the user interface of the model usage. User can start the web and by utilizing device's camera, they can get real-time inferencing from the model.
-``
+
+To run the app, go to the `app/` dir and run this commands:
+```
+npm install
+npm run build
+npm run dev
+```
+## Prerequisite:
+- NodeJS v24.x
 
 # Hardware Benchmark
 
