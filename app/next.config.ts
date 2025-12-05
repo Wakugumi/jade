@@ -8,6 +8,7 @@ const nextConfig: NextConfig = {
     ignoreBuildErrors: true
   },
   output: 'standalone',
+  turbopack: {},
   // Add this if you're using WASM files
   webpack: (config, { isServer }) => {
     config.experiments = {

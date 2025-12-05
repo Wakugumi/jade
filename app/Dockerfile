@@ -23,7 +23,7 @@ ENV NODE_ENV=production
 
 ENV NODE_OPTIONS="--max-old-space-size=4096"
 # Build the application
-RUN npm run build
+RUN npm run build -- --no-turbopack
 
 # Stage 3: Runner
 FROM node:20-alpine AS runner
