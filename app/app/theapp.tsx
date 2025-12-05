@@ -236,8 +236,10 @@ const WasteClassifier = () => {
     <div className="min-h-screen bg-gradient-to-br from-gray-900 to-gray-800 text-white p-4">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-8">
-          <h1 className="text-4xl font-bold mb-2">Waste Classifier</h1>
-          <p className="text-gray-400">Real-time waste classification with ONNX Runtime</p>
+          <h1 className="text-4xl font-bold mb-2">Thrasher</h1>
+          <p className="text-gray-400">Real-time Thrasher that isn't trash</p>
+
+          <p className="text-gray-400 text-sm">Risyad | Leng | Bryan | Henry | Ruby</p>
         </div>
 
         {/* Model Upload */}
