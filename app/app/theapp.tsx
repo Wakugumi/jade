@@ -35,7 +35,10 @@ const WasteClassifier = () => {
       const ort = await import('onnxruntime-web');
 
 
-      ort.env.wasm.wasmPaths = 'https://cdn.jsdelivr.net/npm/onnxruntime-web@1.17.3/dist/'
+      // Configure ONNX Runtime to use local WASM files
+      ort.env.wasm.wasmPaths = '/onnx/';
+      ort.env.wasm.numThreads = 1;
+      ort.env.wasm.simd = true;
       // Create session
       const session = await ort.InferenceSession.create("garbage_weighted.onnx", {
         executionProviders: ['wasm'],
