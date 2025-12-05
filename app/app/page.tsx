@@ -6,6 +6,7 @@ import { canvasStore } from "./_module/canvas.ref";
 import { preprocess } from "@/lib/preprocessing";
 import { transformCanvas } from "@/lib/imageLoader";
 import { decodeOutput, LABELS } from "@/lib/decoder";
+import WasteClassifier from "./theapp";
 
 
 export default function Home() {
@@ -53,14 +54,7 @@ export default function Home() {
 
     <>
 
-      <h1>Model Status: {modelStatus}</h1>
-      <h1>Predicted: {predicted} / {LABELS.flat().toString()}</h1>
-
-      <h1>Score: {inferenceScore}</h1>
-      <h1>Time taken : {inferenceTime}</h1>
-
-      <Canvas height={224} width={224} />
-
+      <WasteClassifier />
     </>
 
 
